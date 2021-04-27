@@ -1,0 +1,5 @@
+-debug
+
+-main Main
+-cp Source
+-cs Export/cs/debug

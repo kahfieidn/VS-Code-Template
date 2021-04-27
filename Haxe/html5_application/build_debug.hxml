@@ -1,0 +1,7 @@
+-debug
+
+-main Main
+-cp Source
+-js Export/html5/debug/Main.js
+
+-cmd cp Assets/Web/Main.html Export/html5/debug/Main.html

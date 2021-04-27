@@ -1,0 +1,35 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch (Chrome)",
+			"type": "chrome",
+			"request": "launch",
+			"preLaunchTask": "Build Html5 debug",
+			"file": "${workspaceRoot}/build/html5/index.html",
+			"linux": { "runtimeArgs": [ "--password-store=basic" ] },
+			"timeout": 100000,
+			"sourceMaps": true
+		},
+		{
+			"name": "Launch (Hxcpp)",
+			"type": "hxcpp",
+			"request": "launch",
+			"preLaunchTask": "Build C++ debug",
+			"linux": {
+				"args": [
+					"runPath=${workspaceRoot}/build/linux",
+					"runCommand=Main",
+					"runInTerminal=true"
+				]
+			},
+			"windows": {
+				"args": [
+					"runPath=${workspaceRoot}/build/windows",
+					"runCommand=Main.exe",
+					"runInTerminal=false"
+				]
+			}
+		}
+	]
+}

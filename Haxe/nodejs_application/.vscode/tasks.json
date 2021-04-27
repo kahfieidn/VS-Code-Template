@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"taskName": "Build debug",
+			"command": "haxe",
+			"args": [ "build_nodejs_debug.hxml" ],
+			"problemMatcher": "$haxe"
+		},
+		{
+			"taskName": "Build release",
+			"command": "haxe",
+			"args": [ "build_nodejs_release.hxml" ],
+			"problemMatcher": "$haxe"
+		}
+	]
+}

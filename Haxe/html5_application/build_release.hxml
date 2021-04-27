@@ -1,0 +1,5 @@
+-main Main
+-cp Source
+-js Export/html5/release/Main.js
+
+-cmd cp Assets/Web/Main.html Export/html5/release/Main.html

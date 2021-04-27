@@ -1,0 +1,20 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch (NodeJS)",
+			"type": "node",
+			"request": "launch",
+			"sourceMaps": true,
+			"preLaunchTask": "Build debug",
+			"program": "${workspaceRoot}/Export/nodejs/debug/Main.js",
+			"outFiles": [ "${workspaceRoot}/Export/nodejs/debug/*.js" ]
+		},
+		{
+			"name": "Attach (NodeJS)",
+			"type": "node",
+			"request": "attach",
+			"processId": "${command:pickProcess}"
+		}
+	]
+}

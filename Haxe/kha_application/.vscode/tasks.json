@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Html5 debug",
+			"command": "node Kha/make --kha Kha --target html5 --compile --debug",
+			"type": "shell",
+			"group": "build"
+		},
+		{
+			"label": "Build Html5 release",
+			"command": "node Kha/make --kha Kha --target html5 --compile",
+			"type": "shell",
+			"group": "build"
+		},
+		{
+			"label": "Build C++ debug",
+			"linux": { "command": "node Kha/make --kha Kha --target linux --compile --debug" },
+			"windows": { "command": "node Kha/make --kha Kha --target windows --compile --debug" },
+			"type": "shell",
+			"group": "build"
+		},
+		{
+			"label": "Build C++ release",
+			"linux": { "command": "node Kha/make --kha Kha --target linux --compile" },
+			"windows": { "command": "node Kha/make --kha Kha --target windows --compile" },
+			"type": "shell",
+			"group": "build"
+		}
+	]
+}

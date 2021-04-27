@@ -1,0 +1,18 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug (NodeJS)",
+			"type": "node",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"program": "${workspaceFolder}/main_module.js"
+		},
+		{
+			"name": "Attach (NodeJS)",
+			"type": "node",
+			"request": "attach",
+			"processId": "${command:pickProcess}"
+		}
+	]
+}
